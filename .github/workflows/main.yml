@@ -1,14 +1,14 @@
-name: Python 3.7.16 app with github actions
+name: Python app with github actions
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.7.15
+    - name: Set up Python 3.8.18
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7.15
+        python-version: 3.8.18
     - name: Install dependencies
       run: |
         make install
